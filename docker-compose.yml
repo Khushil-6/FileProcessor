@@ -1,0 +1,20 @@
+version: '3.x'
+
+services:
+  python-app:
+    build:
+      context: .
+      dockerfile: Dockerfile.python
+    volumes:
+      - /Users/khushilprajapati/PycharmProjects/FileProcessor:/app
+    depends_on:
+      - mongo
+
+  mongo:
+    image: mongo:latest
+    container_name: mongo
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: "nord"
+      MONGO_INITDB_ROOT_PASSWORD: "9OTtHZ9jR4HZfJRW"
+    ports:
+      - "27017:27017"
