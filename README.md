@@ -1,6 +1,6 @@
 # File Processor
 
-The File Processor is a Python application for processing and analyzing files, with a primary focus on and metadata extraction. This application is designed to work with files stored in an Amazon S3 bucket.
+The File Processor is a Python application for processing and analyzing files, with a primary focus on metadata extraction. This application is designed to work with files stored in an Amazon S3 bucket.
 
 ## Prerequisites
 
@@ -50,3 +50,7 @@ processor.process_files()
 ## Configuration
 
 The configuration for the application can be customized by editing the `config.py` file. Make sure to set the appropriate S3 bucket name and other configurations in this file.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/Khushil-6/FileProcessor/blob/main/LICENSE) file for details.
